@@ -15,7 +15,14 @@ spring:
       prefix: /static/
     static-path-pattern: /static/**
     show-sql: false
-
+#  dubbo:
+#    application:
+#      name: ppp
+#    registry:
+#      address: zookeeper://127.0.0.1:2181
+#    protocol:
+#      name: dubbo
+#      port: 20880
 server:
   port: 8099
   servlet:
