@@ -15,16 +15,6 @@ spring:
       prefix: /static/
     static-path-pattern: /static/**
     show-sql: false
-#  dubbo:
-#    application:
-#      name: ccc
-#    registry:
-#      address: zookeeper://127.0.0.1:2181
-#    protocol:
-#      name: dubbo
-#      port: 20880
-#    scan: com.steer.dubbo.consumer.service
-
 
 server:
   port: 8088
@@ -32,3 +22,16 @@ server:
     context-path: /${project}
   tomcat:
     uri-encoding: utf-8
+
+
+dubbo:
+  application:
+    name: consumer
+  registry:
+    protocol: zookeeper
+    address: zookeeper://127.0.0.1:2181
+#  protocol:
+#    name: dubbo
+#    port: 20880
+  scan:
+    base-packages: com.steer.dubbo.extservice.service
