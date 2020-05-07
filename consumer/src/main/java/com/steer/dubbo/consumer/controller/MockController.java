@@ -15,6 +15,7 @@ public class MockController {
     MockService mockService;
     /**
      * 本地伪造
+     * 可以当做服务降级
      * 无producer提供服务时，返回本地mock数据
      * @return
      */
