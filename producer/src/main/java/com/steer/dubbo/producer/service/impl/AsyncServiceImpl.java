@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.CompletableFuture;
 
-@Service(version = "1.0.0")
+@Service(version = "1.0")
 public class AsyncServiceImpl implements AsyncService {
     Logger log = LoggerFactory.getLogger(AsyncServiceImpl.class);
     @Override

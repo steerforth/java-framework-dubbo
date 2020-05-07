@@ -4,7 +4,7 @@ import com.steer.dubbo.extservice.service.ParamService;
 import org.apache.dubbo.config.annotation.Service;
 import org.apache.dubbo.rpc.RpcContext;
 
-@Service(version = "1.0.0",interfaceClass = ParamService.class)
+@Service(version = "1.0",interfaceClass = ParamService.class)
 public class ParamServiceImpl implements ParamService {
     @Override
     public String hello() {

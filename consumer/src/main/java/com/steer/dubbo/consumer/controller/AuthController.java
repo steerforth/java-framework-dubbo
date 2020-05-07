@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController()
 @RequestMapping("/auth")
 public class AuthController {
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0")
     AuthService authService;
     /**
      * TODO 目前无效果

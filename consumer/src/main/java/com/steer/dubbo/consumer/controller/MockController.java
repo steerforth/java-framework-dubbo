@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/mock")
 public class MockController {
 
-    @Reference(version = "1.0.0",mock = "com.steer.dubbo.consumer.service.impl.MockServiceMock")
+    @Reference(version = "1.0",mock = "com.steer.dubbo.consumer.service.impl.MockServiceMock")
     MockService mockService;
     /**
      * 本地伪造

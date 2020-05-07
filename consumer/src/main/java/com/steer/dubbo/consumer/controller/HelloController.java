@@ -14,7 +14,7 @@ public class HelloController {
      * connections配置客户端最大连接数
      * sticky粘滞连接，默认启动lazy,减少长连接。尽可能让客户端总是向同一提供者发起调用。
      */
-    @Reference(version = "1.0.0" )
+    @Reference(version = "1.0" )
     HelloService helloService;
 
     @GetMapping("")

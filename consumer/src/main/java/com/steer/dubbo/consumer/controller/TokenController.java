@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController()
 @RequestMapping("/token")
 public class TokenController {
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0")
     TokenService tokenService;
     /**
      * token令牌

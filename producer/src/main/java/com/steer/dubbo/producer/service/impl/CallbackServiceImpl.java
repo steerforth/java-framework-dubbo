@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 
-@Service(version = "1.0.0",connections = 1,callbacks = 10,methods={ @Method(name = "addListener",arguments = {@Argument(index = 1,callback = true)})})
+@Service(version = "1.0",connections = 1,callbacks = 10,methods={ @Method(name = "addListener",arguments = {@Argument(index = 1,callback = true)})})
 public class CallbackServiceImpl implements CallbackService {
     private final Map<String, CallbackListener> listeners = new ConcurrentHashMap<>();
 

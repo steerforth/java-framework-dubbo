@@ -15,7 +15,7 @@ import java.io.Serializable;
 @RequestMapping("/callback")
 public class CallbackContrller implements Serializable {
     Logger log = LoggerFactory.getLogger(CallbackContrller.class);
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0")
     CallbackService callbackService;
     /**
      *

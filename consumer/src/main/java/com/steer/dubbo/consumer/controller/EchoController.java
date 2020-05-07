@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController()
 @RequestMapping("/echo")
 public class EchoController {
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0")
     HelloService helloService;
     /**
      * 回声测试，查看服务是否可用

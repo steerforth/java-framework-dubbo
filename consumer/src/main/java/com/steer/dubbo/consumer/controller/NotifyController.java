@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class NotifyController {
     Logger log = LoggerFactory.getLogger(NotifyController.class);
     //TODO FutureFilter 方法回调后，找不到Notify.onreturn方法   还是用XML？
-    @Reference(version = "1.0.0",group = "cn",methods = {@Method(name = "createPerson", async = false,onreturn = "Notify.onreturn",onthrow = "Notify.onthrow")})
+    @Reference(version = "1.0",group = "cn",methods = {@Method(name = "createPerson", async = false,onreturn = "Notify.onreturn",onthrow = "Notify.onthrow")})
 //    @Reference(version = "1.0.0",group = "cn")
     NotifyService notifyService;
     @Autowired

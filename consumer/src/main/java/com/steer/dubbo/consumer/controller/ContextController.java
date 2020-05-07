@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController()
 @RequestMapping("/context")
 public class ContextController {
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0")
     HelloService helloService;
 
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0")
     ParamService paramService;
     /**
      * 回声测试，查看服务是否可用

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController()
 @RequestMapping("/stub")
 public class StubController {
-    @Reference(version = "1.0.0",stub = "com.steer.dubbo.consumer.service.impl.BarServiceStub")
+    @Reference(version = "1.0",stub = "com.steer.dubbo.consumer.service.impl.BarServiceStub")
     BarService barService;
     /**
      * 本地存根
