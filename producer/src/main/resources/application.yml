@@ -32,5 +32,7 @@ dubbo:
   protocol:
     name: dubbo
     port: 20880
+    #
+#    accesslog: true
   scan:
     base-packages: com.steer.dubbo.producer.service.impl
