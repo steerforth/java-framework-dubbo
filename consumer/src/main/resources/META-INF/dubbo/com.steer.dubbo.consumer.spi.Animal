@@ -1,0 +1,2 @@
+cat=com.steer.dubbo.consumer.spi.Cat
+dog=com.steer.dubbo.consumer.spi.Dog

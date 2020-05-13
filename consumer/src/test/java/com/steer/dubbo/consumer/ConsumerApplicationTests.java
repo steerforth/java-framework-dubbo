@@ -3,11 +3,11 @@ package com.steer.dubbo.consumer;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class ConsumerApplicationTests {
+@SpringBootTest(classes = ConsumerApplication.class)
+public class ConsumerApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 	}
 
 }
