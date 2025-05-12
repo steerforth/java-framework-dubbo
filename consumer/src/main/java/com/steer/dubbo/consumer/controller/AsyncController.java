@@ -14,7 +14,8 @@ import java.util.concurrent.CompletableFuture;
 @RequestMapping("/async")
 public class AsyncController {
     Logger log = LoggerFactory.getLogger(AsyncController.class);
-    @Reference(version = "1.0",timeout = 10000)
+    //超时重试
+    @Reference(version = "1.0",timeout = 10000,retries = 3)
     AsyncService asyncService;
     /**
      * 回声测试，查看服务是否可用
